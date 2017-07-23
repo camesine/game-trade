@@ -9,6 +9,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { AsideComponent } from '../../components/aside/aside.component';
 import { CartComponent } from '../../components/cart/cart.component';
 import { InventoryComponent } from '../../components/inventory/inventory.component'
+import { FilterComponent } from '../../components/filter/filter.component'
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { InventoryComponent } from '../../components/inventory/inventory.compone
     FooterComponent,
     AsideComponent,
     CartComponent,
-    InventoryComponent
+    InventoryComponent,
+    FilterComponent
   ]
 })
 export class MainModule { }

@@ -3,7 +3,16 @@ import { MainComponent } from './views/main/main.component'
 import { InventoryComponent } from './components/inventory/inventory.component'
 
 export const ROUTES : Routes = [
-
+    {
+        path:'',
+        component: MainComponent,
+        children: [
+            {
+                path: '',
+                component: InventoryComponent
+            }
+        ]
+    },
     {
         path: '',
         redirectTo: '',
@@ -12,15 +21,5 @@ export const ROUTES : Routes = [
     {
         path:'**',
         redirectTo:''
-    },
-    {
-        path:'',
-        component: MainComponent,
-        children: [
-            {
-                path: '',
-                component: MainComponent
-            }
-        ]
     }
 ] 

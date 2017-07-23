@@ -10,6 +10,8 @@ import { AsideComponent } from '../../components/aside/aside.component';
 import { CartComponent } from '../../components/cart/cart.component';
 import { InventoryComponent } from '../../components/inventory/inventory.component'
 import { FilterComponent } from '../../components/filter/filter.component'
+import { HomeComponent } from '../../components/home/home.component'
+import { PostComponent } from '../../components/post/post.component'
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { FilterComponent } from '../../components/filter/filter.component'
     AsideComponent,
     CartComponent,
     InventoryComponent,
-    FilterComponent
+    FilterComponent,
+    HomeComponent,
+    PostComponent
   ]
 })
 export class MainModule { }

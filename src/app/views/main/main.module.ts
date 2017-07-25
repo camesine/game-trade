@@ -13,6 +13,9 @@ import { FilterComponent } from '../../components/common/filter/filter.component
 import { HomeComponent } from '../../components/layouts/home/home.component'
 import { PostComponent } from '../../components/common/post/post.component'
 import { DetailComponent } from '../../components/layouts/detail/detail.component'
+import { ProfileComponent } from '../../components/layouts/profile/profile.component'
+import { DetailProfileComponent } from '../../components/common/detail-profile/detail-profile.component'
+import { ActivitesComponent } from '../../components/common/activites/activites.component'
 
 @NgModule({
   imports: [
@@ -30,7 +33,10 @@ import { DetailComponent } from '../../components/layouts/detail/detail.componen
     FilterComponent,
     HomeComponent,
     PostComponent,
-    DetailComponent
+    DetailComponent,
+    ProfileComponent,
+    DetailProfileComponent,
+    ActivitesComponent
   ]
 })
 export class MainModule { }

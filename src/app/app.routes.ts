@@ -1,7 +1,8 @@
 import { Routes } from "@angular/router";
 import { MainComponent } from './views/main/main.component'
-import { InventoryComponent } from './components/inventory/inventory.component'
-import { HomeComponent } from './components/home/home.component'
+import { InventoryComponent } from './components/layouts/inventory/inventory.component'
+import { HomeComponent } from './components/layouts/home/home.component'
+import { DetailComponent } from './components/layouts/detail/detail.component'
 
 export const ROUTES : Routes = [
     {
@@ -21,6 +22,16 @@ export const ROUTES : Routes = [
             {
                 path: '',
                 component: InventoryComponent
+            }
+        ]
+    },
+    {
+        path:'detail',
+        component: MainComponent,
+        children: [
+            {
+                path: '',
+                component: DetailComponent
             }
         ]
     },

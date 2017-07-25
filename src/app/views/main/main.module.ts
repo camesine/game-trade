@@ -4,14 +4,15 @@ import { MainComponent } from './main.component'
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from "@angular/router";
 
-import { HeaderComponent } from '../../components/header/header.component';
-import { FooterComponent } from '../../components/footer/footer.component';
-import { AsideComponent } from '../../components/aside/aside.component';
-import { CartComponent } from '../../components/cart/cart.component';
-import { InventoryComponent } from '../../components/inventory/inventory.component'
-import { FilterComponent } from '../../components/filter/filter.component'
-import { HomeComponent } from '../../components/home/home.component'
-import { PostComponent } from '../../components/post/post.component'
+import { HeaderComponent } from '../../components/common/header/header.component';
+import { FooterComponent } from '../../components/common/footer/footer.component';
+import { AsideComponent } from '../../components/common/aside/aside.component';
+import { CartComponent } from '../../components/common/cart/cart.component';
+import { InventoryComponent } from '../../components/layouts/inventory/inventory.component'
+import { FilterComponent } from '../../components/common/filter/filter.component'
+import { HomeComponent } from '../../components/layouts/home/home.component'
+import { PostComponent } from '../../components/common/post/post.component'
+import { DetailComponent } from '../../components/layouts/detail/detail.component'
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { PostComponent } from '../../components/post/post.component'
     InventoryComponent,
     FilterComponent,
     HomeComponent,
-    PostComponent
+    PostComponent,
+    DetailComponent
   ]
 })
 export class MainModule { }

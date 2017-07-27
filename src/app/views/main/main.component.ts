@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var jQuery:any;
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AuthService } from './services/auth.service'
 
 import { MainModule } from './views/main/main.module'
 import { LoginModule } from './views/login/login.module'
@@ -16,7 +17,9 @@ import { ROUTES } from './app.routes';
     BrowserModule,
     ROUTES
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

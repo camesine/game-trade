@@ -26,7 +26,7 @@
         <a routerLink="/profile" ><i class="fa fa-th-large"></i> <span class="nav-label">Perfil</span></a>
       </li>
       <li>
-        <a routerLink="/login"  ><i class="fa fa-th-large"></i> <span class="nav-label">Iniciar sesion</span></a>
+        <a *ngIf="!AuthService.session" routerLink="/login"  ><i class="fa fa-th-large"></i> <span class="nav-label">Iniciar sesion</span></a>
       </li>
     </ul>
 

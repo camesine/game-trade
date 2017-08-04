@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../services/auth.service'
 import 'jquery-slimscroll';
 
 declare var jQuery:any;
@@ -10,7 +11,7 @@ declare var jQuery:any;
 })
 export class AsideComponent implements OnInit {
 
-  constructor() { }
+  constructor(private AuthService: AuthService) { }
 
   ngOnInit() {
   }

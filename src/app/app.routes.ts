@@ -31,7 +31,7 @@ export const ROUTES = RouterModule.forRoot([
         ]
     },
     {
-        path:'detail:',
+        path:'detail',
         component: MainComponent,
         children: [
             {

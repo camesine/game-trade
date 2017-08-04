@@ -7,7 +7,10 @@ export interface User {
 }
 
 const USERS: User[] = [
-  {email: 'user@email.com', password: '123456'}
+  {
+    email: 'user@email.com',
+    password: '123456'
+  }
 ];
 
 
@@ -29,6 +32,8 @@ export class AuthService {
       this.session = true;
 
       this.router.navigate(['/']);
+    }else{
+      this.session = false;
     }
 
   }
@@ -36,17 +41,13 @@ export class AuthService {
   logout() {
     this.session = false;
     localStorage.removeItem('user');
-    this.redirect();
+    this.router.navigate(['/'])
   }
 
-  redirect() {
-    this.router.navigate(['/login']);
-  }
 
   check() {
     if (localStorage.getItem('user') === null) {
       this.session = false;
-      this.redirect();
     } else {
       this.session = true;
     }

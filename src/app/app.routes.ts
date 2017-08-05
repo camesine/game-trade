@@ -8,6 +8,7 @@ import { ProfileComponent } from './components/layouts/profile/profile.component
 import { LoginComponent } from './views/login/login.component'
 import { LoginFormComponent } from './components/common/login-form/login-form.component'
 import { RegisterFormComponent } from './components/common/register-form/register-form.component'
+import { ProfileFormComponent } from './components/layouts/profile-form/profile-form.component'
 
 export const ROUTES = RouterModule.forRoot([
     {
@@ -67,6 +68,16 @@ export const ROUTES = RouterModule.forRoot([
             {
                 path: '',
                 component: RegisterFormComponent
+            }
+        ]
+    },
+    {
+        path:'profile',
+        component: MainComponent,
+        children: [
+            {
+                path: 'profile-form',
+                component: ProfileFormComponent
             }
         ]
     },

@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from "@angular/router";
 
 import { HeaderComponent } from '../../components/common/header/header.component';
-import { FooterComponent } from '../../components/common/footer/footer.component';
 import { AsideComponent } from '../../components/common/aside/aside.component';
 import { CartComponent } from '../../components/common/cart/cart.component';
 import { InventoryComponent } from '../../components/layouts/inventory/inventory.component'
@@ -15,6 +14,7 @@ import { PostComponent } from '../../components/common/post/post.component'
 import { DetailComponent } from '../../components/layouts/detail/detail.component'
 import { ProfileComponent } from '../../components/layouts/profile/profile.component'
 import { DetailProfileComponent } from '../../components/common/detail-profile/detail-profile.component'
+import { ProfileFormComponent } from '../../components/layouts/profile-form/profile-form.component'
 import { ActivitesComponent } from '../../components/common/activites/activites.component'
 
 @NgModule({
@@ -26,7 +26,6 @@ import { ActivitesComponent } from '../../components/common/activites/activites.
   declarations: [
     MainComponent,
     HeaderComponent,
-    FooterComponent,
     AsideComponent,
     CartComponent,
     InventoryComponent,
@@ -36,7 +35,8 @@ import { ActivitesComponent } from '../../components/common/activites/activites.
     DetailComponent,
     ProfileComponent,
     DetailProfileComponent,
-    ActivitesComponent
+    ActivitesComponent,
+    ProfileFormComponent
   ]
 })
 export class MainModule { }

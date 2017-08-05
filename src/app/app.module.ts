@@ -7,9 +7,10 @@ import { LoginModule } from './views/login/login.module'
 import { AppComponent } from './app.component';
 import { ROUTES } from './app.routes';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     MainModule,

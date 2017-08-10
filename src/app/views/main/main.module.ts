@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component'
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from "@angular/router";
+import { HttpModule } from '@angular/http';
 
 import { HeaderComponent } from '../../components/common/header/header.component';
 import { AsideComponent } from '../../components/common/aside/aside.component';
@@ -16,11 +17,13 @@ import { ProfileComponent } from '../../components/layouts/profile/profile.compo
 import { DetailProfileComponent } from '../../components/common/detail-profile/detail-profile.component'
 import { ProfileFormComponent } from '../../components/layouts/profile-form/profile-form.component'
 import { ActivitesComponent } from '../../components/common/activites/activites.component'
+import { InventoryService } from '../../services/inventory.service'
 
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
+    HttpModule,
     RouterModule
   ],
   declarations: [
@@ -37,6 +40,9 @@ import { ActivitesComponent } from '../../components/common/activites/activites.
     DetailProfileComponent,
     ActivitesComponent,
     ProfileFormComponent
+  ],
+  providers: [
+    InventoryService
   ]
 })
 export class MainModule { }

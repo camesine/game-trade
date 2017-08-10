@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryService } from '../../../services/inventory.service'
+import { Cart } from '../../../interfaces/carta'
 
 @Component({
   selector: 'app-inventory',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryComponent implements OnInit {
 
-  constructor() { }
+  cartas: Cart[]
+
+  constructor(private InventoryService: InventoryService) { }
 
   ngOnInit() {
+    this.InventoryService.getCartas().then(cartas => {
+      console.log(cartas)
+      this.cartas = cartas.cartas
+    })
   }
 
 }

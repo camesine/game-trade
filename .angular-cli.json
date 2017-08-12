@@ -24,6 +24,8 @@
         "../node_modules/animate.css/animate.min.css",
         "../node_modules/slick-carousel/slick/slick-theme.css",
         "../node_modules/slick-carousel/slick/slick.css",
+        "../vendor/css/plugins/chosen/bootstrap-chosen.css",
+        "../vendor/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css",
         "styles.scss"
       ],
       "scripts": [
@@ -31,7 +33,8 @@
         "../node_modules/metismenu/dist/metisMenu.js",
         "../node_modules/jquery-sparkline/jquery.sparkline.js",
         "../vendor/pace/pace.min.js",
-        "../node_modules/slick-carousel/slick/slick"
+        "../node_modules/slick-carousel/slick/slick",
+        "../vendor/js/plugins/chosen/chosen.jquery.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

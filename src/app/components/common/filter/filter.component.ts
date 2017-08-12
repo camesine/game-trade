@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var jQuery:any;
+
 @Component({
   selector: 'filter',
   templateUrl: './filter.component.html',
@@ -10,6 +12,7 @@ export class FilterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    jQuery('.chosen-select').chosen({ width: "100%" });
   }
 
 }

@@ -6,7 +6,6 @@ import {RouterModule} from "@angular/router";
 import { HttpModule } from '@angular/http';
 
 import { HeaderComponent } from '../../components/common/header/header.component';
-import { AsideComponent } from '../../components/common/aside/aside.component';
 import { CartComponent } from '../../components/common/cart/cart.component';
 import { InventoryComponent } from '../../components/layouts/inventory/inventory.component'
 import { FilterComponent } from '../../components/common/filter/filter.component'
@@ -29,7 +28,6 @@ import { InventoryService } from '../../services/inventory.service'
   declarations: [
     MainComponent,
     HeaderComponent,
-    AsideComponent,
     CartComponent,
     InventoryComponent,
     FilterComponent,

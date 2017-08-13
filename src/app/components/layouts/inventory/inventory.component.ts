@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { InventoryService } from '../../../services/inventory.service'
 import { Cart } from '../../../interfaces/carta'
+import * as _ from 'lodash'
+
+declare var jQuery:any;
 
 @Component({
   selector: 'app-inventory',
@@ -15,8 +18,7 @@ export class InventoryComponent implements OnInit {
 
   ngOnInit() {
     this.InventoryService.getCartas().then(cartas => {
-      console.log(cartas)
-      this.cartas = cartas.cartas
+      this.cartas = _.chunk(cartas.cartas, 18)
     })
   }
 

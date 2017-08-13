@@ -34,7 +34,8 @@
         "../node_modules/jquery-sparkline/jquery.sparkline.js",
         "../vendor/pace/pace.min.js",
         "../node_modules/slick-carousel/slick/slick",
-        "../vendor/js/plugins/chosen/chosen.jquery.js"
+        "../vendor/js/plugins/chosen/chosen.jquery.js",
+        "../vendor/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

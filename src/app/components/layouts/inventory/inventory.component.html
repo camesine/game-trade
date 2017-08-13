@@ -1,6 +1,34 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
-        <filter></filter>
-        <cart *ngFor = "let carta of cartas" [cart]="carta" ></cart>
+        <div class="col-md-3">
+            <filter></filter>
+        </div>
+        <div class="col-md-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Tus cartas</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="carousel slide" id="carousel3">
+                    <div class="carousel-inner">
+                        <div class="item gallery" *ngFor = "let infoCartas of cartas; let index = index" [class.active]="index == 0" >
+                                <div class="col-sm-2" *ngFor = "let info of infoCartas" >
+                                  <cart [cart]="info" ></cart>
+                                </div>
+                        </div>
+                    </div>
+                    <a data-slide="prev" href="#carousel3" class="left carousel-control">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a data-slide="next" href="#carousel3" class="right carousel-control">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
+

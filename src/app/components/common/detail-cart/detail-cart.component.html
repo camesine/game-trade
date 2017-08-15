@@ -1,0 +1,33 @@
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>Detalle</h5>
+    </div>
+    <div class="ibox-content">
+        <div class="ibox">
+                        <div class="ibox-content product-box">
+
+                            <div class="product-imitation">
+                                <img [src]="InventoryService.CartaSeleccionada.imagenGrande">
+                            </div>
+                            <div class="product-desc">
+                                <span class="product-price">
+                                    $2990
+                                </span>
+                                <small class="text-muted">{{InventoryService.CartaSeleccionada.categoria  }}</small>
+                                <a href="#" class="product-name"> {{InventoryService.CartaSeleccionada.nombre  }}</a>
+
+
+
+                                <div class="small m-t-xs">
+                                    {{InventoryService.CartaSeleccionada.descripcion  }}
+                                </div>
+                                <div class="m-t text-righ">
+
+                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Mas <i class="fa fa-long-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+</div>

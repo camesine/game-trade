@@ -13,12 +13,12 @@ declare var jQuery:any;
 export class InventoryComponent implements OnInit {
 
   cartas: Cart[]
-
+  
   constructor(private InventoryService: InventoryService) { }
 
   ngOnInit() {
     this.InventoryService.getCartas().then(cartas => {
-      this.cartas = _.chunk(cartas.cartas, 18)
+      this.cartas = _.chunk(cartas.cartas, 24)
     })
   }
 

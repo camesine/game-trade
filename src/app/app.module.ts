@@ -10,7 +10,7 @@ import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     MainModule,

@@ -18,6 +18,7 @@ import { ProfileFormComponent } from '../../components/layouts/profile-form/prof
 import { ActivitesComponent } from '../../components/common/activites/activites.component'
 import { InventoryService } from '../../services/inventory.service'
 import { DetailCartComponent } from '../../components/common/detail-cart/detail-cart.component'
+import { ExplorerComponent } from '../../components/common/explorer/explorer.component'
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { DetailCartComponent } from '../../components/common/detail-cart/detail-
     DetailCartComponent,
     DetailProfileComponent,
     ActivitesComponent,
-    ProfileFormComponent
+    ProfileFormComponent,
+    ExplorerComponent
   ],
   providers: [
     InventoryService
